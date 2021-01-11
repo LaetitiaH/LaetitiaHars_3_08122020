@@ -1,0 +1,12 @@
+{
+  "name": "P03",
+  "version": "1.0.0",
+  "scripts": {
+    "prettier": "prettier --write \"**\"",
+    "prettier:check": "prettier --check \"**\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
+}
