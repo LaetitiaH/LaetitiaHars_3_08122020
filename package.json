@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "prettier": "prettier --write \"**\"",
-    "prettier:check": "prettier --check \"**\""
+    "prettier:check": "prettier --check \"**\"",
+    "sass": "sass --watch ./sass/main.scss:./style.css"
   },
   "dependencies": {},
   "devDependencies": {
