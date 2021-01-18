@@ -1,0 +1,66 @@
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: $background-color-secondary;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $color-font-localisation;
+  box-shadow: 0px -2px 0px -1px #d4d4d4;
+  cursor: pointer;
+
+  .localisation-city:before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-size: 0.9rem;
+    margin-right: 15px;
+  }
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 280px;
+  background-color: $background-color-primary;
+
+  .presentation-reservation-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .presentation-discover-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-font-presentation;
+  }
+
+  button {
+    height: 50px;
+    width: 225px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1em;
+    background: linear-gradient(
+      to bottom right,
+      $color-anim-secondary 10%,
+      $color-anim-primary
+    );
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+
+    &:hover {
+      background: $color-anim-secondary;
+      box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.21);
+    }
+  }
+}

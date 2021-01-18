@@ -1,0 +1,83 @@
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Shrikhand, serif;
+  font-size: 2rem;
+  margin: 10px 0 10px;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url("assets/police/shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("assets/police/roboto/Roboto.ttf");
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #eaeaea;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #353535;
+  box-shadow: 0px -2px 0px -1px #d4d4d4;
+  cursor: pointer;
+}
+.localisation :first-child {
+  margin-right: 15px;
+  font-size: 0.9rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 280px;
+  background-color: #f6f6f6;
+}
+.presentation .presentation-reservation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.presentation .presentation-discover-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #414141;
+}
+.presentation button {
+  height: 50px;
+  width: 225px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  background: linear-gradient(to bottom right, #ff79da 10%, #9356dc);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.presentation button:hover {
+  background: #ff79da;
+  box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.21);
+}
+
+/*# sourceMappingURL=style.css.map */
