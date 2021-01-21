@@ -45,25 +45,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.localisation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-color: #eaeaea;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #353535;
-  box-shadow: 0px -2px 0px -1px #d4d4d4;
-  cursor: pointer;
-}
-.localisation .localisation-city:before {
-  content: "";
-  font-family: "Font Awesome 5 Free", sans-serif;
-  font-size: 0.9rem;
-  margin-right: 15px;
-}
-
 .presentation {
   display: flex;
   flex-direction: column;
@@ -85,29 +66,33 @@ body {
   align-items: center;
   color: #414141;
 }
-.presentation button {
-  height: 50px;
-  width: 225px;
-  border-radius: 30px;
-  color: white;
-  font-size: 1em;
-  background: linear-gradient(to bottom right, #ff79da 10%, #9356dc);
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-.presentation button:hover {
-  background: #ff79da;
-}
 
-.working {
+.working-section {
   height: 440px;
   padding: 50px 25px 0 25px;
 }
-.working h2 {
+.working-section h2 {
   font-size: 1.3em;
   margin-bottom: 30px;
 }
-.working .working-button {
+
+.restaurants-section {
+  height: 1190px;
+  padding: 50px 25px 0 25px;
+  background-color: #f6f6f6;
+}
+
+.button, .explorer-button, .working-button {
+  border: none;
+  box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+}
+.button:hover, .explorer-button:hover, .working-button:hover {
+  box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.21);
+}
+
+.working-button {
   display: flex;
   align-items: center;
   height: 75px;
@@ -119,28 +104,28 @@ body {
   margin-bottom: 30px;
   position: relative;
 }
-.working .working-button:hover {
+.working-button:hover {
   background-color: #f4eefc;
 }
-.working .working-button:hover:before {
+.working-button:hover:before {
   color: #9356dc;
 }
-.working .working-button:before {
+.working-button:before {
   color: #7e7e7e;
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 1.1rem;
   margin: 0 30px 0 30px;
 }
-.working .working-button:first-of-type:before {
+.working-button:first-of-type:before {
   content: "";
 }
-.working .working-button:nth-of-type(2n):before {
+.working-button:nth-of-type(2n):before {
   content: "";
 }
-.working .working-button:nth-of-type(3n):before {
+.working-button:nth-of-type(3n):before {
   content: "";
 }
-.working .step-number {
+.working-button .step-number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,25 +141,34 @@ body {
   z-index: 1;
 }
 
-.restaurants {
-  height: 1190px;
-  padding: 50px 25px 0 25px;
-  background-color: #f6f6f6;
+.explorer-button {
+  height: 50px;
+  width: 225px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  background: linear-gradient(to bottom right, #ff79da 10%, #9356dc);
+  font-weight: 600;
+  margin-bottom: 30px;
 }
-.restaurants article {
+.explorer-button:hover {
+  background: #ff79da;
+}
+
+.restaurant-card {
   height: 250px;
   box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   position: relative;
   margin-bottom: 20px;
 }
-.restaurants article img {
+.restaurant-card img {
   width: 100%;
   height: 175px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-.restaurants article .new-restaurant {
+.restaurant-card .new-restaurant {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,32 +182,41 @@ body {
   top: 15px;
   right: 15px;
 }
-.restaurants article aside {
+.restaurant-card aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 15px;
 }
-.restaurants article aside h3 {
+.restaurant-card aside h3 {
   margin: 0 0 5px 0;
 }
-.restaurants article aside p {
+.restaurant-card aside p {
   margin: 0;
 }
-.restaurants article aside:after {
+.restaurant-card aside:after {
   content: "";
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 2em;
 }
 
-.button, .presentation button, .working .working-button {
-  border: none;
-  box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.1);
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #eaeaea;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #353535;
+  box-shadow: 0px -2px 0px -1px #d4d4d4;
   cursor: pointer;
-  font-family: Roboto, sans-serif;
 }
-.button:hover, .presentation button:hover, .working .working-button:hover {
-  box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.21);
+.localisation .localisation-city:before {
+  content: "";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 0.9rem;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
