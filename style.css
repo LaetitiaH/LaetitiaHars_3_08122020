@@ -143,6 +143,10 @@ footer ul .partnership:before {
   position: relative;
   margin-bottom: 20px;
 }
+.restaurant-card a {
+  text-decoration: none;
+  color: black;
+}
 .restaurant-card img {
   width: 100%;
   height: 175px;
