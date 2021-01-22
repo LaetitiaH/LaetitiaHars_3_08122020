@@ -6,6 +6,10 @@
   height: 280px;
   background-color: $background-color-primary;
 
+  @media screen and (min-width: 1024px) {
+    border-radius: 0 0 8px 8px;
+  }
+
   .presentation-reservation-text {
     display: flex;
     flex-direction: column;
@@ -36,4 +40,15 @@
   height: 1190px;
   padding: 50px 25px 0 25px;
   background-color: $background-color-primary;
+
+  @media screen and (min-width: 1024px) {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .restaurant-cards-list {
+    @media screen and (min-width: 1024px) {
+      width: 600px;
+      margin: 0 auto;
+    }
+  }
 }
