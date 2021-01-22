@@ -1,0 +1,36 @@
+.menu {
+  background-color: #f6f6f6;
+  height: 1120px;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  padding: 30px 15px 40px 15px;
+  box-sizing: border-box;
+
+  h2 {
+    margin: 0;
+    font-family: Shrikhand, sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+    &:after {
+      content: "\f004";
+      font-family: "Font Awesome 5 Free", sans-serif;
+      font-size: 1em;
+      font-weight: 100;
+      margin-right: 20px;
+    }
+  }
+
+  h3 {
+    color: $color-font-menu;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 25px 0 4px 0;
+  }
+  .color-border {
+    border-top: 2px solid $color-anim-tertiary;
+    width: 35px;
+  }
+}

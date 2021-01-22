@@ -66,10 +66,9 @@
   }
 }
 
-.explorer-button {
+.color-button {
   @extend .button;
   height: 50px;
-  width: 225px;
   border-radius: 30px;
   color: white;
   font-size: 1em;
@@ -83,5 +82,48 @@
 
   &:hover {
     background: $color-anim-secondary;
+  }
+}
+
+.explorer-button {
+  @extend .color-button;
+  width: 225px;
+}
+
+.order-button {
+  @extend .color-button;
+  display: block;
+
+  width: 187px;
+  margin: 50px auto 0 auto;
+}
+
+.menu-button {
+  @extend .button;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  height: 65px;
+  width: 100%;
+  padding: 10px 20px 10px 15px;
+  border-radius: 13px;
+  margin-top: 15px;
+  line-height: 1.7em;
+
+  .title-menu-button {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  .menu-button-description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    span:nth-child(2n) {
+      font-weight: 600;
+    }
   }
 }
