@@ -80,6 +80,14 @@
   background: #ff79da;
 }
 
+.picture-restaurant {
+  width: 100%;
+  height: 250px;
+}
+.picture-restaurant img {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-size: 16px;
