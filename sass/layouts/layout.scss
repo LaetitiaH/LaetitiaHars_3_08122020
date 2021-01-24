@@ -20,6 +20,10 @@ header {
     left: 20px;
     text-decoration: none;
     color: black;
+
+    @media screen and (min-width: 1024px) {
+      left: 150px;
+    }
   }
 
   h1 {
