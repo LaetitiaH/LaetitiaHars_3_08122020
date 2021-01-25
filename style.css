@@ -185,17 +185,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 header .back-arrow {
   position: absolute;
   left: 20px;
   text-decoration: none;
   color: black;
-}
-@media screen and (min-width: 1024px) {
-  header .back-arrow {
-    left: 150px;
-  }
 }
 header h1 {
   font-family: Shrikhand, serif;
@@ -228,6 +224,10 @@ footer ul li:before {
   font-weight: 900;
   margin-right: 10px;
 }
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
 footer ul .restaurant-send:before {
   content: "";
 }
@@ -238,6 +238,7 @@ footer ul .partnership:before {
 
 .restaurant-card {
   height: 250px;
+  background-color: white;
   box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   position: relative;
@@ -337,8 +338,7 @@ footer ul .partnership:before {
 }
 
 .working-section {
-  height: 440px;
-  padding: 50px 25px 0 25px;
+  padding: 30px 25px 25px 25px;
 }
 .working-section h2 {
   font-size: 1.3em;
@@ -346,8 +346,7 @@ footer ul .partnership:before {
 }
 
 .restaurants-section {
-  height: 1190px;
-  padding: 50px 25px 0 25px;
+  padding: 30px 25px 25px 25px;
   background-color: #f6f6f6;
 }
 @media screen and (min-width: 1024px) {
