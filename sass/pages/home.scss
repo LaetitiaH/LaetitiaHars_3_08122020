@@ -6,10 +6,6 @@
   height: 280px;
   background-color: $background-color-primary;
 
-  @media screen and (min-width: 1024px) {
-    border-radius: 0 0 8px 8px;
-  }
-
   .presentation-reservation-text {
     display: flex;
     flex-direction: column;
@@ -33,6 +29,11 @@
     font-size: 1.3em;
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 .restaurants-section {
@@ -40,13 +41,18 @@
   background-color: $background-color-primary;
 
   @media screen and (min-width: 1024px) {
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
+    max-width: 1400px;
+    margin: 0 auto 40px auto;
   }
 
   .restaurant-cards-list {
     @media screen and (min-width: 1024px) {
-      width: 600px;
-      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 10px;
     }
   }
 }

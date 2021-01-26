@@ -8,6 +8,19 @@
   box-sizing: border-box;
   margin-bottom: -50px;
 
+  @media screen and (min-width: 1024px) {
+    position: unset;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .menu-section {
+    @media screen and (min-width: 1024px) {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+
   h2 {
     margin: 0;
     font-family: Shrikhand, sans-serif;
