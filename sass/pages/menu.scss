@@ -19,6 +19,10 @@
       max-width: 1400px;
       margin: 0 auto;
     }
+
+    .title-menu {
+      margin-right: 15px;
+    }
   }
 
   h2 {
@@ -26,14 +30,6 @@
     font-family: Shrikhand, sans-serif;
     display: flex;
     justify-content: space-between;
-
-    &:after {
-      content: "\f004";
-      font-family: "Font Awesome 5 Free", sans-serif;
-      font-size: 1em;
-      font-weight: 100;
-      margin-right: 20px;
-    }
   }
 
   h3 {
@@ -42,6 +38,7 @@
     font-weight: 500;
     margin: 25px 0 4px 0;
   }
+
   .color-border {
     border-top: 2px solid $color-anim-tertiary;
     width: 35px;

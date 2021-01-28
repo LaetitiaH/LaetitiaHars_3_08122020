@@ -250,11 +250,6 @@ footer ul .partnership:before {
 .restaurant-card aside p {
   margin: 0;
 }
-.restaurant-card aside:after {
-  content: "";
-  font-family: "Font Awesome 5 Free", sans-serif;
-  font-size: 2em;
-}
 
 .localisation {
   display: flex;
@@ -273,6 +268,27 @@ footer ul .partnership:before {
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 0.9rem;
   margin-right: 15px;
+}
+
+.heart {
+  display: flex;
+  font-size: 2em;
+  position: relative;
+}
+.heart .far {
+  opacity: 1;
+}
+.heart .fas {
+  position: absolute;
+  opacity: 0;
+  color: #9356dc;
+  transition: opacity 1.8s ease-in-out;
+}
+.heart:hover .fas {
+  opacity: 1;
+}
+.heart:hover .far {
+  opacity: 0.5;
 }
 
 .presentation {
@@ -331,6 +347,11 @@ footer ul .partnership:before {
     row-gap: 10px;
   }
 }
+.restaurants-section .restaurant-cards-list .no-link {
+  position: absolute;
+  top: 197px;
+  right: 20px;
+}
 
 .menu {
   background-color: #f6f6f6;
@@ -355,18 +376,14 @@ footer ul .partnership:before {
     margin: 0 auto;
   }
 }
+.menu .menu-section .title-menu {
+  margin-right: 15px;
+}
 .menu h2 {
   margin: 0;
   font-family: Shrikhand, sans-serif;
   display: flex;
   justify-content: space-between;
-}
-.menu h2:after {
-  content: "";
-  font-family: "Font Awesome 5 Free", sans-serif;
-  font-size: 1em;
-  font-weight: 100;
-  margin-right: 20px;
 }
 .menu h3 {
   color: #7b7b7b;

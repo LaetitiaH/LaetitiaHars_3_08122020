@@ -1,0 +1,25 @@
+.heart {
+  display: flex;
+  font-size: 2em;
+  position: relative;
+
+  .far {
+    opacity: 1;
+  }
+
+  .fas {
+    position: absolute;
+    opacity: 0;
+    color: $color-anim-primary;
+    transition: opacity 1.8s ease-in-out;
+  }
+
+  &:hover {
+    .fas {
+      opacity: 1;
+    }
+    .far {
+      opacity: 0.5;
+    }
+  }
+}
