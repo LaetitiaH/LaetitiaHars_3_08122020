@@ -1,4 +1,77 @@
 @charset "UTF-8";
+.spinner {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #f6f6f6;
+  animation: spinner 1200ms both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.load {
+  width: 100vw;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .load {
+    font-size: 50px;
+  }
+}
+.load__bar {
+  opacity: 0;
+  animation: bars 1200ms ease-in-out alternate-reverse;
+  font-family: Shrikhand, sans-serif;
+}
+.load__bar--1 {
+  color: #9356dc;
+  margin-right: 25px;
+  animation-delay: 100ms;
+}
+@media screen and (min-width: 1024px) {
+  .load__bar--1 {
+    margin-right: 50px;
+  }
+}
+.load__bar--2 {
+  color: #ff79da;
+  margin-right: 30px;
+  animation-delay: 300ms;
+}
+@media screen and (min-width: 1024px) {
+  .load__bar--2 {
+    margin-right: 60px;
+  }
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+  color: #99e2d0;
+}
+
+@keyframes bars {
+  0% {
+    transform: scale3d(1, 0.5, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+}
+@keyframes spinner {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @font-face {
   font-family: Shrikhand;
   src: url("assets/police/shrikhand/Shrikhand-Regular.ttf");

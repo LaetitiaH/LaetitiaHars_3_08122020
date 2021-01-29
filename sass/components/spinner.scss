@@ -1,0 +1,75 @@
+$anim-dur: 1200ms;
+$anim-delay: 100ms;
+
+.spinner {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: $background-color-primary;
+  animation: spinner $anim-dur both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.load {
+  width: 100vw;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 50px;
+  }
+
+  &__bar {
+    opacity: 0;
+    animation: bars $anim-dur ease-in-out alternate-reverse;
+    font-family: Shrikhand, sans-serif;
+
+    &--1 {
+      color: $color-anim-primary;
+      margin-right: 25px;
+      animation-delay: $anim-delay;
+      @media screen and (min-width: 1024px) {
+        margin-right: 50px;
+      }
+    }
+    &--2 {
+      color: $color-anim-secondary;
+      margin-right: 30px;
+      animation-delay: $anim-delay * 3;
+      @media screen and (min-width: 1024px) {
+        margin-right: 60px;
+      }
+    }
+    &--3 {
+      animation-delay: $anim-delay * 6;
+      color: $color-anim-tertiary;
+    }
+  }
+}
+
+@keyframes bars {
+  0% {
+    transform: scale3d(1, 0.5, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+}
+
+@keyframes spinner {
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
