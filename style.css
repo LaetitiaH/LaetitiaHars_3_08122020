@@ -163,6 +163,7 @@
 }
 
 .menu-button {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,6 +180,15 @@
     width: 30%;
   }
 }
+.menu-button .menu-button-content {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  transition: width 300ms 0ms ease-in;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .menu-button .title-menu-button {
   font-weight: 600;
   font-size: 1.2em;
@@ -188,9 +198,46 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  white-space: nowrap;
+}
+.menu-button .menu-button-description span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-button .menu-button-description span:nth-child(2n) {
   font-weight: 600;
+  margin-left: 10px;
+}
+.menu-button .add-basket {
+  display: flex;
+  height: 65px;
+  width: 16%;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3em;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms 1ms ease-in;
+}
+.menu-button .add-basket .fa-check-circle {
+  transform: rotate(180deg);
+  transition: transform 300ms 0ms ease-in;
+}
+.menu-button:hover .menu-button-content {
+  width: calc(100% - 18%);
+}
+.menu-button:hover .fa-check-circle {
+  transform: rotate(0deg);
+}
+.menu-button:hover .add-basket {
+  transform: scaleX(1);
 }
 
 .picture-restaurant {
