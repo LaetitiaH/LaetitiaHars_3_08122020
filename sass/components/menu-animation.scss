@@ -1,0 +1,22 @@
+$anim-dur: 100ms;
+$anim-delay: 100ms;
+$nb-menu-button: 10;
+
+.menu-button {
+  @for $i from 1 through $nb-menu-button {
+    &--#{$i} {
+      animation: display-menu $anim-dur $anim-delay * $i linear both;
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes display-menu {
+  0% {
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

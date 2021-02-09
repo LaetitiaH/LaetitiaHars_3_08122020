@@ -1115,60 +1115,57 @@ footer ul .partnership:before {
 }
 
 .menu-button--1 {
-  opacity: 1;
-  animation: display-menu 200ms 200ms linear both;
+  animation: display-menu 100ms 100ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--2 {
-  opacity: 1;
-  animation: display-menu 200ms 400ms linear both;
+  animation: display-menu 100ms 200ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--3 {
-  opacity: 1;
-  animation: display-menu 200ms 600ms linear both;
+  animation: display-menu 100ms 300ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--4 {
-  opacity: 1;
-  animation: display-menu 200ms 800ms linear both;
+  animation: display-menu 100ms 400ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--5 {
-  opacity: 1;
-  animation: display-menu 200ms 1000ms linear both;
+  animation: display-menu 100ms 500ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--6 {
-  opacity: 1;
-  animation: display-menu 200ms 1200ms linear both;
+  animation: display-menu 100ms 600ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--7 {
-  opacity: 1;
-  animation: display-menu 200ms 1400ms linear both;
+  animation: display-menu 100ms 700ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--8 {
-  opacity: 1;
-  animation: display-menu 200ms 1600ms linear both;
+  animation: display-menu 100ms 800ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--9 {
-  opacity: 1;
-  animation: display-menu 200ms 1800ms linear both;
+  animation: display-menu 100ms 900ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 .menu-button--10 {
-  opacity: 1;
-  animation: display-menu 200ms 2000ms linear both;
+  animation: display-menu 100ms 1000ms linear both;
   transform: translateY(-100px);
+  opacity: 0;
 }
 
 @keyframes display-menu {
-  0% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
     transform: translateY(0px);
