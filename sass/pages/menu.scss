@@ -22,17 +22,25 @@
 
     .title-menu {
       margin-right: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
-  h2 {
+  h1 {
     margin: 0;
     font-family: Shrikhand, sans-serif;
     display: flex;
     justify-content: space-between;
   }
 
-  h3 {
+  h2 {
     color: $color-font-menu;
     font-size: 0.9em;
     font-weight: 500;
@@ -42,11 +50,5 @@
   .color-border {
     border-top: 2px solid $color-anim-tertiary;
     width: 35px;
-  }
-
-  section section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }

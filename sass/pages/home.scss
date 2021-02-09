@@ -7,25 +7,30 @@
   background-color: $background-color-primary;
 
   .presentation-reservation-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     font-size: 1.5em;
     font-weight: 600;
+    margin: 0;
+    padding: 0 30px 0 30px;
   }
 
   .presentation-discover-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     color: $color-font-presentation;
+    padding: 0 30px 0 30px;
+
+    h2 {
+      font-size: 1em;
+      font-weight: 400;
+      margin: 0;
+    }
   }
 }
 
 .working-section {
   padding: 30px 25px 25px 25px;
 
-  h2 {
+  h1 {
     font-size: 1.3em;
     margin-bottom: 30px;
   }

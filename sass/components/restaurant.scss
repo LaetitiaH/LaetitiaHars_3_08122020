@@ -33,13 +33,14 @@
     right: 15px;
   }
 
-  aside {
+  article {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 10px 15px;
 
-    h3 {
+    h2 {
+      font-size: 1.17em;
       margin: 0 0 5px 0;
     }
 
