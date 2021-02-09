@@ -1,4 +1,4 @@
-.restaurant-card {
+.restaurants-list__card {
   height: 250px;
   background-color: white;
   box-shadow: 0 5px 9px 4px rgba(0, 0, 0, 0.1);
@@ -18,21 +18,6 @@
     object-fit: cover;
   }
 
-  .new-restaurant {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 30px;
-    background-color: $background-color-green;
-    color: darken($background-color-green, 40%);
-    border-radius: 4px;
-    font-weight: 600;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-
   article {
     display: flex;
     justify-content: space-between;
@@ -47,5 +32,26 @@
     p {
       margin: 0;
     }
+  }
+
+  &--new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    background-color: $background-color-green;
+    color: darken($background-color-green, 40%);
+    border-radius: 4px;
+    font-weight: 600;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  &--heart {
+    position: absolute;
+    top: 197px;
+    right: 20px;
   }
 }

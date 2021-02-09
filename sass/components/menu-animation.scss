@@ -2,18 +2,43 @@ $anim-dur: 100ms;
 $anim-delay: 100ms;
 $nb-menu-button: 10;
 
-.menu-button {
+.btn__menu {
+  &:hover {
+    .btn-content {
+      width: calc(100% - 18%);
+    }
+
+    .btn-addtobasket {
+      transform: scaleX(1);
+
+      .fa-check-circle {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .btn-addtobasket {
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 300ms 1ms ease-in;
+
+    .fa-check-circle {
+      transform: rotate(180deg);
+      transition: transform 300ms 0ms ease-in;
+    }
+  }
+
   @for $i from 1 through $nb-menu-button {
     &--#{$i} {
       animation: display-menu $anim-dur $anim-delay * $i linear both;
-      transform: translateY(-100px);
-      opacity: 0;
     }
   }
 }
 
 @keyframes display-menu {
   0% {
+    opacity: 0;
+    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
