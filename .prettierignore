@@ -3,3 +3,9 @@ assets/
 .idea
 .gitignore
 .prettierignore
+
+src/style.css
+src/style.css.map
+
+README.md
+
