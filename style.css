@@ -418,45 +418,46 @@ footer ul .partnership:before {
   transform: rotate(180deg);
   transition: transform 300ms 0ms ease-in;
 }
+
 .btn__menu--1 {
-  animation: display-menu 100ms 100ms linear both;
+  animation: display-menu 100ms 100ms linear backwards;
 }
 .btn__menu--2 {
-  animation: display-menu 100ms 200ms linear both;
+  animation: display-menu 100ms 200ms linear backwards;
 }
 .btn__menu--3 {
-  animation: display-menu 100ms 300ms linear both;
+  animation: display-menu 100ms 300ms linear backwards;
 }
 .btn__menu--4 {
-  animation: display-menu 100ms 400ms linear both;
+  animation: display-menu 100ms 400ms linear backwards;
 }
 .btn__menu--5 {
-  animation: display-menu 100ms 500ms linear both;
+  animation: display-menu 100ms 500ms linear backwards;
 }
 .btn__menu--6 {
-  animation: display-menu 100ms 600ms linear both;
+  animation: display-menu 100ms 600ms linear backwards;
 }
 .btn__menu--7 {
-  animation: display-menu 100ms 700ms linear both;
+  animation: display-menu 100ms 700ms linear backwards;
 }
 .btn__menu--8 {
-  animation: display-menu 100ms 800ms linear both;
+  animation: display-menu 100ms 800ms linear backwards;
 }
 .btn__menu--9 {
-  animation: display-menu 100ms 900ms linear both;
+  animation: display-menu 100ms 900ms linear backwards;
 }
 .btn__menu--10 {
-  animation: display-menu 100ms 1000ms linear both;
+  animation: display-menu 100ms 1000ms linear backwards;
 }
 
 @keyframes display-menu {
   0% {
-    opacity: 0;
     transform: translateY(-100px);
+    opacity: 0;
   }
   100% {
-    opacity: 1;
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 .presentation-text {

@@ -27,21 +27,23 @@ $nb-menu-button: 10;
       transition: transform 300ms 0ms ease-in;
     }
   }
+}
 
+.btn__menu {
   @for $i from 1 through $nb-menu-button {
     &--#{$i} {
-      animation: display-menu $anim-dur $anim-delay * $i linear both;
+      animation: display-menu $anim-dur $anim-delay * $i linear backwards;
     }
   }
 }
 
 @keyframes display-menu {
   0% {
-    opacity: 0;
     transform: translateY(-100px);
+    opacity: 0;
   }
   100% {
-    opacity: 1;
     transform: translateY(0px);
+    opacity: 1;
   }
 }

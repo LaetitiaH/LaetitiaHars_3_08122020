@@ -64,6 +64,9 @@ $anim-delay: 100ms;
 }
 
 @keyframes spinner {
+  0% {
+  }
+
   80% {
     opacity: 1;
   }
