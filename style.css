@@ -391,7 +391,7 @@ footer ul .partnership:before {
   position: absolute;
   opacity: 0;
   color: #9356dc;
-  transition: opacity 1.8s ease-in-out;
+  transition: opacity 600ms ease-in-out;
 }
 .heart:hover .fas {
   opacity: 1;
