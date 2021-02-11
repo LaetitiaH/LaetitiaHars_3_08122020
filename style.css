@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Shrikhand;
+  src: url("assets/police/shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("assets/police/roboto/Roboto.ttf");
+}
 .spinner {
   position: fixed;
   height: 100%;
@@ -71,14 +79,6 @@
     opacity: 0;
     z-index: -1;
   }
-}
-@font-face {
-  font-family: Shrikhand;
-  src: url("assets/police/shrikhand/Shrikhand-Regular.ttf");
-}
-@font-face {
-  font-family: Roboto;
-  src: url("assets/police/roboto/Roboto.ttf");
 }
 .button, .btn__menu, .color-button, .btn__color--medium, .btn__color--large, .working-section__btn {
   border: none;
@@ -307,6 +307,122 @@ footer ul .partnership:before {
   font-size: 0.7em;
 }
 
+.presentation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 280px;
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 0 30px 0 30px;
+}
+.presentation-text .presentation-text__title {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0;
+}
+.presentation-text .presentation-text__subtitle {
+  color: #414141;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.working-section {
+  padding: 30px 25px 25px 25px;
+}
+.working-section h1 {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .working-section {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+.working-section .working-section__btn:first-of-type:before {
+  content: "";
+}
+.working-section .working-section__btn:nth-of-type(2n):before {
+  content: "";
+}
+.working-section .working-section__btn:nth-of-type(3n):before {
+  content: "";
+}
+
+.restaurants-section {
+  padding: 30px 25px 25px 25px;
+  background-color: #f6f6f6;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants-section {
+    border-radius: 8px;
+    max-width: 1400px;
+    margin: 0 auto 40px auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants-section .restaurants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 10px;
+  }
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  padding: 30px 15px 80px 15px;
+  box-sizing: border-box;
+  margin-bottom: -50px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    position: unset;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .menu-section {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+.menu .menu-section__title {
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu-section__title h1 {
+  margin: 0;
+  font-family: Shrikhand, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu-section__subtitle {
+  color: #7b7b7b;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 25px 0 4px 0;
+}
+.menu .menu-section__subtitle + div {
+  border-top: 2px solid #99e2d0;
+  width: 35px;
+}
+.menu .menu-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .restaurants-list__card {
   height: 250px;
   background-color: white;
@@ -459,121 +575,6 @@ footer ul .partnership:before {
     transform: translateY(0px);
     opacity: 1;
   }
-}
-.presentation-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 280px;
-  background-color: #f6f6f6;
-  text-align: center;
-  padding: 0 30px 0 30px;
-}
-.presentation-text .presentation-text__title {
-  font-size: 1.3em;
-  font-weight: 600;
-  margin: 0;
-}
-.presentation-text .presentation-text__subtitle {
-  color: #414141;
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0;
-}
-
-.working-section {
-  padding: 30px 25px 25px 25px;
-}
-.working-section h1 {
-  font-size: 1.3em;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1024px) {
-  .working-section {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-}
-.working-section .working-section__btn:first-of-type:before {
-  content: "";
-}
-.working-section .working-section__btn:nth-of-type(2n):before {
-  content: "";
-}
-.working-section .working-section__btn:nth-of-type(3n):before {
-  content: "";
-}
-
-.restaurants-section {
-  padding: 30px 25px 25px 25px;
-  background-color: #f6f6f6;
-}
-@media screen and (min-width: 1024px) {
-  .restaurants-section {
-    border-radius: 8px;
-    max-width: 1400px;
-    margin: 0 auto 40px auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .restaurants-section .restaurants-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 10px;
-  }
-}
-
-.menu {
-  background-color: #f6f6f6;
-  border-radius: 35px 35px 0 0;
-  position: relative;
-  top: -50px;
-  width: 100%;
-  padding: 30px 15px 80px 15px;
-  box-sizing: border-box;
-  margin-bottom: -50px;
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    position: unset;
-    border-radius: 0;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu .menu-section {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-}
-.menu .menu-section__title {
-  margin-right: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-.menu .menu-section__title h1 {
-  margin: 0;
-  font-family: Shrikhand, sans-serif;
-  display: flex;
-  justify-content: space-between;
-}
-.menu .menu-section__subtitle {
-  color: #7b7b7b;
-  font-size: 0.9em;
-  font-weight: 500;
-  margin: 25px 0 4px 0;
-}
-.menu .menu-section__subtitle + div {
-  border-top: 2px solid #99e2d0;
-  width: 35px;
-}
-.menu .menu-section__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
